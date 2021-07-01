@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="address" class="com.luoyingmm.pojo.Address">
+        <property name="address" value="常州"/>
+    </bean>
+    <bean id="student" class="com.luoyingmm.pojo.Student">
+        <property name="name" value="落樱"/>
+        <property name="address" ref="address"/>
+        <property name="books">
+            <array>
+                <value>1</value>
+                <value>2</value>
+                <value>3</value>
+            </array>
+        </property>
+
+        <property name="bobbies">
+            <list>
+                <value>4</value>
+                <value>5</value>
+                <value>6</value>
+            </list>
+        </property>
+
+        <property name="card">
+            <map>
+                <entry key="身份证" value="1435456576432"/>
+                <entry key="银行卡" value="1224345676879"/>
+            </map>
+        </property>
+
+        <property name="games">
+            <set>
+                <value>7</value>
+                <value>8</value>
+                <value>9</value>
+            </set>
+        </property>
+
+        <property name="wife">
+            <null/>
+        </property>
+
+        <property name="info">
+            <props>
+                <prop key="学号">123</prop>
+                <prop key="ip">192.168.3.4</prop>
+            </props>
+        </property>
+    </bean>
+</beans>
