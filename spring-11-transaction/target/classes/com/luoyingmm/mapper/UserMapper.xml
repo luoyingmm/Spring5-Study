@@ -7,11 +7,11 @@
         select * from mybatis.user
     </select>
 
-    <insert id="addUser" parameterType="user">
-        insert into mybatis.user(id, name, pwd) VALUES (id=#{id},name=#{name},pwd=#{pwd})
+    <insert id="addUser" parameterType="com.luoyingmm.pojo.User">
+        insert into mybatis.user VALUES (#{id},#{name},#{pwd})
     </insert>
 
     <delete id="deleteUser" parameterType="_int">
-        delete from mybatis.user where id=#{id}
+        deletes from mybatis.user where id=#{id}
     </delete>
 </mapper>

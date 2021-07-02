@@ -7,4 +7,5 @@
     <bean id="UserMapperImpl" class="com.luoyingmm.mapper.UserMapperImpl">
         <property name="sqlSessionFactory" ref="sqlSessionFactory"/>
     </bean>
+
 </beans>
